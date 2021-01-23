@@ -4,8 +4,10 @@ A flask web app that lets you chat with otheres..
 # How to use 
 git clone https://github.com/shivamsuyal/Python-web-chat 
 
-cd Python-web-chat
-pip install -r requirements.txt
+cd Python-web-chat 
+
+pip install -r requirements.txt 
+
 python app.py
 
 # For more ....
