@@ -2,11 +2,12 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from flask_socketio import SocketIO, join_room, leave_room, emit
 from flask_session import Session
 import random
+from os import urandom
 
 l1=['boom','ubantu','kali','football','nethunter','spider-man','batman','hero','saktiman']
 app = Flask(__name__)
 app.debug = True
-app.config['SECRET_KEY'] = 'secret'
+app.config['SECRET_KEY'] = urandom(50)
 app.config['SESSION_TYPE'] = 'filesystem'
 
 Session(app)
